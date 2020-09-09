@@ -1,0 +1,50 @@
+.header{
+    background-color: yellowgreen;
+}
+
+#hotelCard{
+    display:inline-block;
+    margin: 30px;
+    border: solid 1px lightblue;
+    height: 300px;
+    width: 300px;
+    border-radius: 5%;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.submitBtn{
+    background-color: blue;
+    border: solid 2px blue;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.selectedHotelModal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width:  100%;
+    
+    top: 0;
+    padding-top: 100px; /* Location of the box */
+    background-color: rgb(0,0,0); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    overflow: auto;
+}
+
+#modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(219, 56, 56);
+    width: 80%;
+}
+
+.closeModalBtn{
+    float: right;
+    cursor: pointer;
+}

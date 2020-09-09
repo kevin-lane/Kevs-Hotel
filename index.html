@@ -1,0 +1,39 @@
+<html>
+    <title>Kevs Hotel</title>
+    <link rel="stylesheet" type="text/css" href="Style/KevinsHotel.css">
+    
+    <body>
+        <div class="header">
+            <h1>Kevs Hotel</h1>
+            <input type="search" id="locationSearch" name="location" placeholder="Location" onkeyup="searchBarFeatures()">
+            <input type="date" class="checkInTime" value="1992-06-16" name="checkInDate" placeholder="Check in" required>
+            <input type="date" class="checkOutTime" name="checkOutDate" placeholder="Check out">
+            <input type="number" class="noOfGuests" name="NoOfGuests" placeholder="Guests">
+            <input type="submit" class="submitBtn" value="Search">
+        </div>
+
+        <h2 id="searchCount"></h2>
+
+        <ul id="hotelList">
+            <!-- <li id="hotelCard">
+                <h3 class="hotelName"></h3>
+                <p class="hotelLocation"></p>
+                <dfn class="hotelDescription"></dfn> 
+                <b class="priceOfStay"></b><br>
+                <button onclick="openSelectedHotelModal()" class="selectHotelBtn">Select this hotel</button>
+            </li> -->
+        </ul>
+        
+            <div id="hotelModal" class="selectedHotelModal">
+                <!-- <div id="modal-content">
+                    <span class="closeModalBtn" onclick="closeSelectedModal()">&#8864;</span>
+                    <h3 class="selectedHotelName"><b></b></h3>
+                    <p class="selectedHotelLocation"></p>
+                    <dfn class="selectedHotelDescription">The best hotel in Gothenburg. Its gör best</dfn> 
+                    <b class="selectedPriceOfStay">800 SEK</b><br>
+                </div> -->
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="Script/KevinsHotel.js"></script>
+    </body>
+</html>
